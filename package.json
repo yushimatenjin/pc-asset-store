@@ -1,0 +1,45 @@
+{
+  "name": "pc-asset-store",
+  "description": "PC Asset Store",
+  "version": "1.0.0",
+  "author": "yushimatenjin",
+  "dependencies": {
+    "firebase": "^7.6.1",
+    "next": "^9.1.7",
+    "node-sass": "^4.13.0",
+    "playcanvas-node": "^1.4.7",
+    "react": "^16.12.0",
+    "react-circle": "^1.1.1",
+    "react-dom": "^16.12.0",
+    "react-firebaseui": "^4.0.0",
+    "react-modal-hook": "^3.0.0",
+    "react-syntax-highlighter": "^12.2.1",
+    "styled-components": "^5.0.1",
+    "styled-media-query": "^2.1.2",
+    "uuid": "^7.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@firebase/firestore-types": "^1.9.0",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-syntax-highlighter": "^11.0.4",
+    "@types/styled-components": "^5.0.1",
+    "@types/uuid": "^7.0.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "babel-preset-react-app": "^9.1.0",
+    "fork-ts-checker-webpack-plugin": "^4.0.1",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "export": "next export",
+    "start": "next start"
+  }
+}
