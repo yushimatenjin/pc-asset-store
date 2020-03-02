@@ -1,14 +1,49 @@
 # PC Asset Storeについて
-PlayCanvasのスクリプトの移動を簡単にできるためのツールです
+PlayCanvasのスクリプトを保存・管理を容易にするためのツールです。
 
-# 構成について
+### 1. インストール
 
-- OS
-  - Ubuntu
-- Webサーバー
-  - Nginx
-- JavaScript フレームワーク
-  - Next.js
-- 実行環境
-  - Node.js 12
-  - PM2
+リポジトリをクローン
+
+```bash
+git clone git@github.com:gmocloud-adp/pc-asset-store.git
+cd pc-asset-store.git
+```
+
+パッケージをインストール
+
+```
+yarn install
+```
+
+### 2. データーベースの設定をする
+
+ソースコードの保存にFirebaseを用いています。
+[こちらから](https://console.firebase.google.com/)
+Firebaseの接続情報を取得し、firebaseの接続情報を設定します
+
+```javascript
+// src/constants/firebase.ts
+export const firebaseConfig = {
+  apiKey: "...",
+  authDomain: "...",
+  databaseURL: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "...",
+  measurementId: "..."
+};
+```
+
+### 3. 起動
+
+開発環境
+```
+yarn dev
+```
+
+本番環境
+```
+yarn build && yarn start
+```
