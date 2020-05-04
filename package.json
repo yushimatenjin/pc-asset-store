@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "yushimatenjin",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "firebase": "^7.13.2",
     "next": "^9.3.4",
     "node-sass": "^4.13.0",
