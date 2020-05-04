@@ -48,3 +48,8 @@ yarn dev
 ```
 yarn build && yarn start
 ```
+
+### デプロイ方法
+
+HerokuやVercelを使用することで簡単にデプロイをすることができます。
+https://vercel.com/
