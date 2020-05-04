@@ -18,25 +18,26 @@ yarn install
 
 ### 2. データーベースの設定をする
 
-ソースコードの保存にFirebaseを用いています。
+このプロジェクトでは、データのFirebaseを用いています。
 [こちらから](https://console.firebase.google.com/)
 Firebaseの接続情報を取得し、firebaseの接続情報を設定します
 
-```javascript
-// src/constants/firebase.ts
-export const firebaseConfig = {
-  apiKey: "...",
-  authDomain: "...",
-  databaseURL: "...",
-  projectId: "...",
-  storageBucket: "...",
-  messagingSenderId: "...",
-  appId: "...",
-  measurementId: "..."
-};
+```.env
+// .env.example
+apiKey=xxxxxxxxxxxx
+authDomain=xxxxxxxxxxxx
+databaseURL=xxxxxxxxxxxx
+projectId=xxxxxxxxxxxx
+storageBucket=xxxxxxxxxxxx
+messagingSenderId=xxxxxxxxxxxx
+appId=xxxxxxxxxxxx
+measurementId=xxxxxxxxxxxx
 ```
+### 3 ファイル名を変更
 
-### 3. 起動
+`.env.examples`　→ `.env`へファイル名を変更します。
+
+### 4. 起動
 
 開発環境
 ```

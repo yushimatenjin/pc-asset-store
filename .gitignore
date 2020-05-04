@@ -81,6 +81,5 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-src/constants/firebase.ts
 
 

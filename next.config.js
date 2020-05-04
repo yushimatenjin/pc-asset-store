@@ -1,5 +1,17 @@
 // next.config.js
-const withSass = require('@zeit/next-sass')
+require("dotenv").config();
+const withSass = require("@zeit/next-sass");
+
 module.exports = withSass({
-  /* config options here */
-})
+  env: {
+    // Reference a variable that was defined in the .env file and make it available at Build Time
+    apiKey: process.env.apiKey,
+    authDomain: process.env.authDomain,
+    databaseURL: process.env.databaseURL,
+    projectId: process.env.projectId,
+    storageBucket: process.env.storageBucket,
+    messagingSenderId: process.env.messagingSenderId,
+    appId: process.env.appId,
+    measurementId: process.env.measurementId,
+  },
+});
